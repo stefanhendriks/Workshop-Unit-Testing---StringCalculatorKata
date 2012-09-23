@@ -1,0 +1,23 @@
+Three known bugs, can you find them?
+
+
+
+SOLLUTION:
+	There are three bugs, which can be found with the following tests:
+	// easy: wrong input
+	@Test
+	public void handleNull() {
+		assertEquals(0, makeStringCalculator().add(null));
+	}
+
+	// (normal), edge case, 999 should still be counted
+	@Test
+	public void shouldCount999() {
+		assertEquals(1000, makeStringCalculator().add("1,999"));
+	}
+
+	// hard: new lines not working when using custom delimiter
+	@Test
+	public void handleNewDelimiterWithNewLines() {
+		assertEquals(60, makeStringCalculator().add("//;\n10;20\n30;\n"));
+	}

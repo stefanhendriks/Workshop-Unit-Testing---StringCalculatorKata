@@ -1,0 +1,25 @@
+StringCalculator
+----------------
+
+A StringCalculator provides an "add" method with one String parameter.
+The output of the Add method is always an integer.
+
+The "add" method accepts a String argument.
+The input String can be a single number.
+An empty String should return 0
+
+The input String can be a comma separated String. The output should be the sum. 
+	Example: "1,2" --> 3
+
+The input String can also be separated by new lines (mixed with comma's). Ie:
+	"1,2\n3" --> 6
+
+The input String can optionally start with //. When it does; everything until \n is a custom delimiter. 
+This custom delimiter should work:
+	"//a\n1a2a3a" --> 6
+
+When a negative number is used, an exception is thrown.
+	"-1" --> Exception
+
+Numbers bigger than 1000 should be ignored
+	"1,1000,2" --> 3

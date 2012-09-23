@@ -1,0 +1,6 @@
+StringCalculator (Part II)
+----------------
+
+Add functionality so you can read a file with input and write output to a file called output.txt
+
+Add functionality when an error occurs, the error is printed on standard out (STDOUT)
