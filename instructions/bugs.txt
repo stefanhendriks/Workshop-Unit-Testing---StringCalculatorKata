@@ -2,7 +2,7 @@ Three known bugs, can you find them?
 
 
 
-SOLLUTION:
+SOLUTION:
 	There are three bugs, which can be found with the following tests:
 	// easy: wrong input
 	@Test
